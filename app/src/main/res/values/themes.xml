@@ -16,7 +16,7 @@
     </style>
 
     <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
-        <item name="android:fontFamily">monospace</item>
+        <item name="android:fontFamily">@font/arial_rounded_mt</item>
     </style>
 
     <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">

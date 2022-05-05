@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:title="Chemistry 101"
-        app:titleTextColor="@color/purple_700"
         app:menu="@menu/main_menu"
+        app:titleTextColor="@color/purple_700"
         android:background="@color/background_gray"
         app:layout_constraintTop_toTopOf="parent" />
 
