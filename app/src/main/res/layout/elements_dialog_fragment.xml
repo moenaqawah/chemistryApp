@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_rounded_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/state_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Standard State"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="Gas"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/state_label"
+        app:layout_constraintStart_toEndOf="@id/state_label"
+        app:layout_constraintTop_toTopOf="@id/state_label" />
+
+    <TextView
+        android:id="@+id/atomic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Atomic Mass"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/state_label" />
+
+    <TextView
+        android:id="@+id/atomic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0080 u"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/atomic_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/atomic_label" />
+
+    <TextView
+        android:id="@+id/electron_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Electron Config"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/atomic_label" />
+
+    <TextView
+        android:id="@+id/electron_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1s"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/electron_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/electron_label" />
+
+    <TextView
+        android:id="@+id/oxi_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Oxidation States"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/electron_label" />
+
+    <TextView
+        android:id="@+id/oxi_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1, -1"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/oxi_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/oxi_label" />
+
+    <TextView
+        android:id="@+id/gativity_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Electronegativity"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/oxi_label" />
+
+    <TextView
+        android:id="@+id/gativity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.2"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/gativity_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/gativity_label" />
+
+    <TextView
+        android:id="@+id/radius_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Atomic Radius"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gativity_label" />
+
+    <TextView
+        android:id="@+id/radius_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="120 pm"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/radius_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/radius_label" />
+
+    <TextView
+        android:id="@+id/ion_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Ionization Energy"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radius_label" />
+
+    <TextView
+        android:id="@+id/ion_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13.598 eV"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/ion_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/ion_label" />
+
+    <TextView
+        android:id="@+id/electron_aff_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Electron Affinity"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ion_label" />
+
+    <TextView
+        android:id="@+id/electron_aff_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.754 eV"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/electron_aff_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/electron_aff_label" />
+
+    <TextView
+        android:id="@+id/melting_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Melting Point"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/electron_aff_label" />
+
+    <TextView
+        android:id="@+id/melting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13.81 K"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/melting_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/melting_label" />
+
+    <TextView
+        android:id="@+id/boiling_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Boiling Point"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/melting_label" />
+
+    <TextView
+        android:id="@+id/boiling_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20.28 K"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/boiling_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/boiling_label" />
+
+    <TextView
+        android:id="@+id/density_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Density"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/boiling_label" />
+
+    <TextView
+        android:id="@+id/density_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00008988 g/cm\u00B3"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/density_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/density_label" />
+
+    <TextView
+        android:id="@+id/year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Year Discovered"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/density_label" />
+
+    <TextView
+        android:id="@+id/year_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1766"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/year_label"
+        app:layout_constraintStart_toStartOf="@id/state_text"
+        app:layout_constraintTop_toTopOf="@id/year_label" />
+
+    <Button
+        android:id="@+id/more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="false"
+        android:text="More Info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/year_label"/>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        android:textSize="16sp"
+        android:textColor="@color/purple_700"
+        app:layout_constraintTop_toTopOf="@id/more_info"
+        app:layout_constraintBottom_toBottomOf="@id/more_info"
+        app:layout_constraintStart_toEndOf="@id/more_info"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.main.CompoundDetailsActivity">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="NaHCO3"
+            app:titleTextColor="@color/white" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info_card_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_500"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/info_text_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sodium bicarbonate is a white, odourless, crystalline powder that is commonly used as a pH buffering agent, an electrolyte replenisher, systemic alkalizer and in topical cleansing solutions."
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/image_1"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/compound_image" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info_card_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintTop_toBottomOf="@id/info_card_1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_gray"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple_500"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/info_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sodium Bicarbonate is the monosodium salt of carbonic acid with alkalinizing and electrolyte replacement properties. Upon dissociation, sodium bicarbonate forms sodium and bicarbonate ions. Ion formation increases plasma bicarbonate and buffers excess hydrogen ion concentration, resulting in raised blood pH."
+                    android:textColor="@color/purple_700"
+                    android:textSize="20sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/image_2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nahco3_image"
+                        app:layout_constraintTop_toBottomOf="@id/info_card_2" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info_card_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintTop_toBottomOf="@id/info_card_2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/dialog_rounded_bg">
+
+                <TextView
+                    android:id="@+id/state_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Molecular Geometry"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/state_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Trigonal Planer"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/state_label"
+                    app:layout_constraintStart_toEndOf="@id/state_label"
+                    app:layout_constraintTop_toTopOf="@id/state_label" />
+
+                <TextView
+                    android:id="@+id/atomic_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Hybridization"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/state_label" />
+
+                <TextView
+                    android:id="@+id/atomic_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sp2"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/atomic_label"
+                    app:layout_constraintStart_toStartOf="@id/state_text"
+                    app:layout_constraintTop_toTopOf="@id/atomic_label" />
+
+                <TextView
+                    android:id="@+id/electron_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Molecular Weight"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/atomic_label" />
+
+                <TextView
+                    android:id="@+id/electron_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="84.0066 g/mol"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/electron_label"
+                    app:layout_constraintStart_toStartOf="@id/state_text"
+                    app:layout_constraintTop_toTopOf="@id/electron_label" />
+
+                <TextView
+                    android:id="@+id/oxi_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Bond Pairs"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/electron_label" />
+
+                <TextView
+                    android:id="@+id/oxi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/oxi_label"
+                    app:layout_constraintStart_toStartOf="@id/state_text"
+                    app:layout_constraintTop_toTopOf="@id/oxi_label" />
+
+                <TextView
+                    android:id="@+id/gativity_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Lone Pairs"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/oxi_label" />
+
+                <TextView
+                    android:id="@+id/gativity_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/gativity_label"
+                    app:layout_constraintStart_toStartOf="@id/state_text"
+                    app:layout_constraintTop_toTopOf="@id/gativity_label" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/info_card_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_shape"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/info_card_3">
+
+                <ImageView
+                    android:id="@+id/image_3d"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/iamge_3d"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon_3d"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_icon_3d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

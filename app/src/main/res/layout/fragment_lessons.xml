@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/first_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/background_gray"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Molar Mass"
+                android:textColor="@color/purple_700"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/desc_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="The molar mass of a compound tells you the mass of 1 mole of that substance. In other words, it tells you the number of grams per mole of a compound. The units for molar mass are, therefore, grams/mole."
+                android:textColor="@color/purple_700"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/title1"
+                app:layout_constraintTop_toBottomOf="@id/title1" />
+
+            <TextView
+                android:id="@+id/eta_1"
+                android:layout_width="wrap_content"
+                android:textSize="10sp"
+                android:text="ETA: 30 minutes"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/desc_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/more_info_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="More Info"
+                android:drawableEnd="@drawable/ic_arrow_right_purple"
+                android:gravity="center"
+                android:textColor="@color/purple_500"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@id/eta_1"
+                app:layout_constraintTop_toTopOf="@id/eta_1"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/sketch"
+        layout="@layout/sketch_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_rounded_bg"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/dialog_text"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:textColor="@color/purple_700"
+    android:textSize="20sp"
+    android:text="The reason behind this compounds abundance is that Silicon Dioxide is a compound of the two most abundant elements in the Earth's crust, silicon and oxygen, SiO2.+ The reason why silicon is the most common element within the rocky planets, is because it was the most common element (next to hydrogen) in the original nebula that condescend to form the solar system."
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
